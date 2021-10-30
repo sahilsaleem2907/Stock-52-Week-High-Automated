@@ -35,7 +35,7 @@ def scrap():
 	global driver
 
 	webhook = Webhook.from_url(
-		"https://discord.com/api/webhooks/903934234471825448/VzVDotiqT0mz8_59OhQtDaps_gtOEX374UyzzwRWNWJerZaQ42kBy40sUPWGlbxI5Tfd",
+		"YOUR_WEBHOOK_URL",
 		adapter=RequestsWebhookAdapter())
 
 	webhook.send("The STOCKS This Week are :\n\n" + driver.find_element_by_class_name("stockLists").text)
